@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Route Assessment &amp; Trek Inquiry | Kita-Alps Expeditions</title>
+  <meta name="description" content="Submit a route inquiry for certified alpine guiding and porter logistics across 8 Northern Alps routes. Fast assessment and hut slot availability.">
+  <link rel="canonical" href="https://kita-alps-expeditions.com/inquiry.html">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Top Sticky Navigation Bar (Mewah & Elegan) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Kita-Alps Expeditions Home">
+        <div class="brand-text-wrap">
+          <span class="brand-name">KITA-ALPS</span>
+          <span class="brand-sub">EXPEDITIONS • 北アルプス</span>
+        </div>
+      </a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>\n        <a href="routes.html" class="nav-link">Routes</a>\n        <a href="services.html" class="nav-link">Guides & Porters</a>\n        <a href="safety.html" class="nav-link">Safety Protocol</a>\n        <a href="reviews.html" class="nav-link">Field Reports</a>\n        
+      </nav>
+      <div class="header-actions">
+        <a href="inquiry.html" class="btn btn-accent" style="font-size:0.85rem; padding:0.6rem 1.3rem;">Check Trail Availability</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="routes.html" class="mobile-nav-link">Expedition Routes</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Guides &amp; Porter Logistics</a></li>
+      <li><a href="safety.html" class="mobile-nav-link">Safety &amp; JMGA Credentials</a></li>
+      <li><a href="reviews.html" class="mobile-nav-link">Hiker Field Reports</a></li>
+      <li><a href="inquiry.html" class="mobile-nav-link">Route Assessment &amp; Booking</a></li>
+    </ul>
+    <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:1rem;">
+      <a href="inquiry.html" class="btn btn-accent" style="width:100%;">Check Trail Availability</a>
+      <a href="https://wa.me/818012345678?text=Hello%20Kita-Alps%20Expeditions,%20I'd%20like%20to%20inquire%20about%20a%20guided%20trek" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width:100%;">
+        Direct WhatsApp Desk
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <section class="inquiry-hero-section">
+      <div class="container">
+        <div class="section-eyebrow">HIGH-INTENT ROUTE QUALIFICATION</div>
+        <h1 class="section-title">Expedition Inquiry &amp; Route Assessment</h1>
+        <p class="section-desc">
+          Tell us about your target dates, mountain experience, and pack preferences across our 8 flagship routes. Our English-speaking alpine logistics desk in Matsumoto evaluates every request within 24 hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="section-padding" style="background:var(--color-bg-canvas); border-bottom:1px solid var(--color-border);">
+      <div class="container">
+        <div class="form-layout-grid">
+          <!-- Form Card -->
+          <div class="trek-form-card">
+            <form id="trekInquiryForm" name="trek-inquiry" method="POST" data-netlify="true" action="/inquiry.html?submitted=true">
+              <input type="hidden" name="form-name" value="trek-inquiry">
+
+              <!-- Step 1: Objective & Dates -->
+              <h3 class="form-step-title">
+                <span class="step-badge">STEP 01</span>
+                Expedition Objective &amp; Timeline
+              </h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inquiryRoute" class="form-label">Target Alpine Route *</label>
+                  <select id="inquiryRoute" name="target_route" class="form-select" required>
+                    <option value="">Select one of 8 objectives...</option>
+                    <option value="Mt. Yarigatake Spearhead (3D/2N)">01 • Mt. Yarigatake Spearhead (3,180m - 3D/2N)</option>
+                    <option value="Daikiretto Knife-Edge Col (4D/3N)">02 • Daikiretto Knife-Edge Col (2,740m - 4D/3N)</option>
+                    <option value="Hotakadake Cirque Traverse (3D/2N)">03 • Hotakadake Cirque Traverse (3,190m - 3D/2N)</option>
+                    <option value="Gendarme Pinnacle Dome (3D/2N)">04 • Gendarme Pinnacle Dome (3,163m - 3D/2N)</option>
+                    <option value="Mt. Tsurugidake Technical (3D/2N)">05 • Mt. Tsurugidake Technical Crags (2,999m - 3D/2N)</option>
+                    <option value="Shiroumadake Daisekkei (2D/1N)">06 • Shiroumadake Snow Couloir (2,932m - 2D/1N)</option>
+                    <option value="Jonendake Skyline (2D/1N)">07 • Jonendake Panorama Skyline (2,857m - 2D/1N)</option>
+                    <option value="Yakedake Volcano Col (1D)">08 • Yakedake Volcano Day-Trek (2,455m - 1D)</option>
+                    <option value="Custom Private Multi-Day Traverse">Custom Private Multi-Day Traverse</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryDates" class="form-label">Estimated Dates / Month (2027/2028) *</label>
+                  <input type="text" id="inquiryDates" name="target_dates" class="form-input" placeholder="e.g. August 10 - August 18, 2027" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="groupSize" class="form-label">Group Size (Climbers) *</label>
+                  <select id="groupSize" name="group_size" class="form-select" required>
+                    <option value="1">Solo Climber (1:1 Guide Option)</option>
+                    <option value="2">2 Climbers (Ideal 1:2 Ratio)</option>
+                    <option value="3-4">3–4 Climbers (Standard 1:4 Ratio)</option>
+                    <option value="5+">5+ Climbers (Dual Guide Team Required)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="serviceTier" class="form-label">Service Package Preference *</label>
+                  <select id="serviceTier" name="service_tier" class="form-select" required>
+                    <option value="Full Alpine Porter Service (Recommended)">Full Alpine Porter Service (Recommended - 6.5kg Light Pack)</option>
+                    <option value="Alpine Route Guide Only">Alpine Route Guide Only (Self-Carry 18kg)</option>
+                    <option value="Custom Private Expedition">Custom Private Expedition</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Step 2: Experience & Fitness -->
+              <h3 class="form-step-title" style="margin-top:2rem;">
+                <span class="step-badge">STEP 02</span>
+                Alpine Experience &amp; Scrambling Level
+              </h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="experienceLevel" class="form-label">Highest Scramble Grade Conquered *</label>
+                  <select id="experienceLevel" name="experience_level" class="form-select" required>
+                    <option value="">Select your experience...</option>
+                    <option value="Class 1-2 (Trail hiking, minimal rock hands)">Class 1-2 (Trail hiking, minimal rock hands)</option>
+                    <option value="Class 3 (Moderate scrambling, hands on rock)">Class 3 (Moderate scrambling, hands on rock)</option>
+                    <option value="Class 4 (Vertical chains, ladders, high exposure)">Class 4 (Vertical chains, ladders, high exposure)</option>
+                    <option value="Technical Climbing (Roped lead climbing)">Technical Climbing (Roped lead climbing / 5.6+)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="insuranceStatus" class="form-label">Search &amp; Rescue (SAR) Insurance *</label>
+                  <select id="insuranceStatus" name="sar_insurance" class="form-select" required>
+                    <option value="Active Policy (Global Rescue, Ripcord, etc.)">Active Policy (Global Rescue, Ripcord, etc.)</option>
+                    <option value="Planning to purchase before departure">Planning to purchase before departure</option>
+                    <option value="Need recommendation from Kita-Alps team">Need recommendation from Kita-Alps team</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Step 3: Contact Details -->
+              <h3 class="form-step-title" style="margin-top:2rem;">
+                <span class="step-badge">STEP 03</span>
+                Lead Climber Information
+              </h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName" class="form-label">Full Name *</label>
+                  <input type="text" id="clientName" name="full_name" class="form-input" placeholder="e.g. David Miller" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientEmail" class="form-label">Email Address *</label>
+                  <input type="email" id="clientEmail" name="email" class="form-input" placeholder="name@domain.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientCountry" class="form-label">Country of Residence *</label>
+                  <input type="text" id="clientCountry" name="country" class="form-input" placeholder="e.g. United States / Australia" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientWhatsapp" class="form-label">WhatsApp Number (with Country Code) *</label>
+                  <input type="tel" id="clientWhatsapp" name="whatsapp" class="form-input" placeholder="+1 (555) 019-2834" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="clientNotes" class="form-label">Medical, Dietary, or Route Notes (Optional)</label>
+                <textarea id="clientNotes" name="notes" class="form-textarea" placeholder="Detail any prior altitude experience, knee/joint concerns, dietary restrictions, or specific photography objectives..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent" style="width:100%; padding:1rem; font-size:1.05rem; margin-top:1rem;">
+                Submit Route Assessment &amp; Availability Request
+              </button>
+            </form>
+          </div>
+
+          <!-- Form Aside Info -->
+          <div class="form-help-card">
+            <div class="whatsapp-box">
+              <h4>Fast Logistics Question?</h4>
+              <p>
+                Need immediate clarification regarding weather windows, hut slot dates, or gear specifications before submitting? Connect directly with our Nagano dispatch team on WhatsApp.
+              </p>
+              <button id="waDirectAction" class="btn-whatsapp" type="button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.072-1.026-.057-.234-.077-.525-.192-.916-.36-1.637-.704-2.704-2.355-2.787-2.466-.082-.112-.667-.888-.667-1.694 0-.806.422-1.202.572-1.365.15-.164.33-.205.441-.205.111 0 .222.001.32.006.103.004.24-.04.375.285.14.337.477 1.164.519 1.25.042.085.07.185.014.296-.057.112-.085.182-.17.28-.085.099-.178.222-.254.297-.085.084-.174.175-.075.344.099.169.439.723.942 1.172.648.577 1.194.757 1.363.841.17.085.27.07.37-.044.101-.115.434-.505.549-.679.115-.174.23-.145.388-.086.158.058 1.002.472 1.174.558.172.085.287.128.33.199.043.072.043.415-.101.82z"/></svg>
+                Launch WhatsApp Direct Chat
+              </button>
+            </div>
+
+            <div class="help-widget">
+              <h4 style="font-size:1.15rem; margin-bottom:0.75rem; color:var(--color-primary-forest);">Our Assessment Guarantee</h4>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:0.85rem; font-size:0.92rem; color:var(--color-text-muted);">
+                <li>✓ 24-Hour Response from a certified bilingual guide</li>
+                <li>✓ Realistic route feasibility analysis based on your background</li>
+                <li>✓ Pre-check of mountain hut availability for your requested week</li>
+                <li>✓ Zero obligation until dates and hut slots are confirmed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer (Mewah & Tipografis) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:1.2rem;">
+            <div class="brand-text-wrap">
+              <span class="brand-name">KITA-ALPS</span>
+              <span class="brand-sub">EXPEDITIONS • 北アルプス</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Specialist high-altitude mountain guiding and dedicated porter logistics for international mountaineers in the Japan Northern Alps.
+          </p>
+          <div class="footer-nap-block mono-spec" style="font-size:0.82rem;">
+            <div><strong>Headquarters:</strong> Matsumoto Alpine Center, 3-1-1 Ote, Matsumoto-shi, Nagano 390-0874, Japan</div>
+            <div><strong>Operating Hours:</strong> 08:00 – 20:00 JST (Mon – Sun)</div>
+            <div><strong>Emergency Dispatch:</strong> +81-263-55-8921</div>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Expedition Routes</h4>
+          <ul class="footer-links-list">
+            <li><a href="routes.html#yarigatake" class="footer-link">Mt. Yarigatake Spearhead (3,180m)</a></li>
+            <li><a href="routes.html#daikiretto" class="footer-link">Daikiretto Knife-Edge Col</a></li>
+            <li><a href="routes.html#hotakadake" class="footer-link">Hotakadake Cirque Traverse</a></li>
+            <li><a href="routes.html#gendarme" class="footer-link">Gendarme Pinnacle Dome (3,163m)</a></li>
+            <li><a href="routes.html#tsurugidake" class="footer-link">Mt. Tsurugidake Crags</a></li>
+            <li><a href="routes.html#shirouma" class="footer-link">Shiroumadake Daisekkei</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Safety &amp; Logistics</h4>
+          <ul class="footer-links-list">
+            <li><a href="safety.html#jmga" class="footer-link">JMGA Guide Certification</a></li>
+            <li><a href="safety.html#inreach" class="footer-link">Garmin inReach Satellite Link</a></li>
+            <li><a href="services.html#porter" class="footer-link">Alpine Porter Weight Rules</a></li>
+            <li><a href="safety.html#yamagoya" class="footer-link">Yamagoya Hut Guarantees</a></li>
+            <li><a href="safety.html#insurance" class="footer-link">Required SAR Insurance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Book Expedition</h4>
+          <p style="font-size:0.85rem; color:#94A3B8; margin-bottom:1.2rem; line-height:1.55;">
+            2027/2028 high season hut permits open now. Contact our bilingual desk to reserve dates.
+          </p>
+          <a href="inquiry.html" class="btn btn-accent" style="width:100%; font-size:0.85rem; margin-bottom:0.75rem;">
+            Submit Route Assessment
+          </a>
+          <a href="https://wa.me/818012345678?text=Hello%20Kita-Alps%20Expeditions,%20I'd%20like%20to%20inquire%20about%20a%20guided%20trek" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" style="width:100%; font-size:0.85rem;">
+            Emergency WhatsApp Line
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026–2027 Kita-Alps Expeditions (北アルプス エクスペディション). All rights reserved. Registered Nagano Prefectural Tour Operator #4812.
+        </div>
+        <div class="footer-partners-strip mono-spec">
+          <span>JMGA ACCREDITED</span> • <span>GARMIN FLEET ACTIVE</span> • <span>WFR CERTIFIED</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

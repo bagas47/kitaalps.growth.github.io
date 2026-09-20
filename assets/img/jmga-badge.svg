@@ -1,0 +1,20 @@
+﻿<svg xmlns=" http://www.w3.org/2000/svg\ viewBox=\0 0 160 160\ width=\160\ height=\160\ aria-label=\JMGA Certified Alpine Guide Seal\>
+ <defs>
+ <path id=\textCircle\ d=\M 80 80 m -62 0 a 62,62 0 1,1 124,0 a 62,62 0 1,1 -124 0\/>
+ </defs>
+ <circle cx=\80\ cy=\80\ r=\76\ fill=\#16241D\ stroke=\#D94826\ stroke-width=\3\/>
+ <circle cx=\80\ cy=\80\ r=\70\ fill=\none\ stroke=\#D8DDD5\ stroke-width=\1\ stroke-dasharray=\3 3\/>
+ <text font-family=\Space Grotesk sans-serif\ font-size=\9\ font-weight=\700\ fill=\#F4F5F0\ letter-spacing=\2.2\>
+ <textPath href=\#textCircle\ startOffset=\50%\ text-anchor=\middle\>
+ JAPAN MOUNTAIN GUIDES ASSOC. • JMGA •
+ </textPath>
+ </text>
+ <circle cx=\80\ cy=\80\ r=\50\ fill=\#1B382B\ stroke=\#D8DDD5\ stroke-width=\1.5\/>
+ <polygon points=\80 48 96,78 64,78\ fill=\#F4F5F0\/>
+ <polygon points=\80,48 80,78 64,78\ fill=\#D8DDD5\/>
+ <polygon points=\62,64 74,86 50,86\ fill=\#A0AEC0\/>
+ <polygon points=\98,62 110,86 86,86\ fill=\#CBD5E1\/>
+ <polygon points=\80,88 83,95 90,95 84,99 87,106 80,102 73,106 76,99 70,95 77 95\ fill=\#D94826\/>
+ <text x=\80\ y=\118\ font-family=\JetBrains Mono monospace\ font-size=\8.5\ font-weight=\700\ fill=\#F4F5F0\ text-anchor=\middle\ letter-spacing=\1\>CERTIFIED</text>
+ <text x=\80\ y=\126\ font-family=\JetBrains Mono monospace\ font-size=\6.5\ font-weight=\600\ fill=\#D94826\ text-anchor=\middle\ letter-spacing=\0.5\>NORTH ALPS FLEET</text>
+</svg>
